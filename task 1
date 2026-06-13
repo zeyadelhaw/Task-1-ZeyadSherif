@@ -1,0 +1,32 @@
+main.py
+def chatbot():
+    print("Welcome to DecodeLabs Chatbot! Type 'exit' to close.")
+    
+    while True:
+        user_input = input("You: ")
+        clean_input = user_input.lower().strip()
+        
+        if clean_input == "exit" or clean_input == "quit":
+            print("Bot: Goodbye!")
+            break
+            
+        elif clean_input == "hello" or clean_input == "hi":
+            print("Bot: Hello! How can I help you today?")
+            
+        elif clean_input == "project 1":
+            print("Bot: Project 1 is a Rule-Based AI Chatbot using if-else logic.")
+            
+        elif clean_input == "white box":
+            print("Bot: White box means 100% hard-coded logic with no hallucinations.")
+            
+        elif clean_input == "ipo":
+            print("Bot: IPO stands for Input, Process, and Output model.")
+            
+        elif clean_input == "guardrails":
+            print("Bot: Guardrails are rules used to filter and protect AI systems.")
+            
+        else:
+            print("Bot: I do not understand. Please try again.")
+
+if __name__ == "__main__":
+    chatbot()
